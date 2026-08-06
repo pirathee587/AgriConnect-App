@@ -1,0 +1,38 @@
+# ============================================================
+# Root-level .gitignore for AgriConnect (Monorepo)
+# ============================================================
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment / secrets — NEVER commit real secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Build artifacts (root level)
+dist/
+build/
+out/

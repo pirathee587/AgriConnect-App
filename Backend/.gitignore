@@ -1,0 +1,62 @@
+# ============================================================
+# Backend .gitignore — Spring Boot / Maven
+# ============================================================
+
+# Maven build output
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven wrapper JAR (use the properties file instead)
+.mvn/wrapper/maven-wrapper.jar
+
+# Build output logs
+build_output.txt
+*.log
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Application secrets & local overrides
+src/main/resources/application-local.properties
+src/main/resources/application-secret.properties
+
+# Uploaded files / storage directories
+uploads/
+files/
+
+# ─── IDE: IntelliJ IDEA ─────────────────────────────────────
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ─── IDE: Eclipse / STS ─────────────────────────────────────
+HELP.md
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# ─── IDE: NetBeans ──────────────────────────────────────────
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ─── IDE: VS Code ───────────────────────────────────────────
+.vscode/
+
+# ─── OS ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
